@@ -10,12 +10,13 @@
 // -----------------------------------------
 
 Nodo * crearNodo(Amigo * amigo) {
-    Nodo * nodo = (Nodo *) malloc(sizeof(Nodo));
-
-    strncpy(nodo->amigo.apellido, amigo->apellido, 50);
+	
+	Nodo * nodo = (Nodo *) malloc(sizeof(Nodo));
+	
+	strncpy(nodo->amigo.apellido, amigo->apellido, 50);
 	strncpy(nodo->amigo.nombre, amigo->nombre, 50);
 	
-    nodo->sgte = NULL;
+	nodo->sgte = NULL;
 
     return nodo;
 }
