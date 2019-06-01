@@ -97,7 +97,7 @@ int cantidad(Lista * lista) {
     return lista->longitud;
 }
 
-int vacia(Lista * lista) {
+int estaVacia(Lista * lista) {
     return lista->inicio == NULL;
 }
 
